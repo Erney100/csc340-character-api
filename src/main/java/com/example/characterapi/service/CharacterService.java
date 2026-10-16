@@ -34,4 +34,12 @@ public class CharacterService {
     public void deleteCharacter(long id) {
         characterRepository.deleteById(id);
     }
+
+   public List<TvCharacter> getCharactersByUniverse(String universe) {
+    return characterRepository.findByUniverseIgnoreCase(universe);
+   }
+
+   public List<TvCharacter> searchCharactersByName(String name) {
+    return characterRepository.findByNameContainingIgnoreCase(name);
+}
 }
