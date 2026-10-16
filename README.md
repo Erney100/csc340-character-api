@@ -118,8 +118,9 @@ The API rejects requests with a missing or blank `name` or `description` with `4
 5. Open `http://localhost:8080/api/characters` to access the API.
 
 ## Deployment
+Render URL: https://csc340-character-api-ri3d.onrender.com
 
-The application is deployed on Render using Docker. PostgreSQL is hosted on Neon. The database connection string is configured through Render's `SPRING_DATASOURCE_URL` environment variable and is not stored in the repository.
+The application is deployed on Render using its free web service tier. Free Render services sleep after periods of inactivity, so the first request after the service has been idle may take up to a minute to respond.
 
 ## Repository
 
