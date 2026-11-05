@@ -7,24 +7,25 @@ import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.persistence.Table;
 
-@Entity 
+@Entity
 @Table(name = "characters")
 
 public class TvCharacter {
-    @Id 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long characterId;
 
-    @NotBlank 
+    @NotBlank
     private String name;
 
-    @NotBlank 
+    @NotBlank
     private String description;
     private String universe;
     private String role;
     private String species;
+    private String imageUrl;
 
-    public TvCharacter(){
+    public TvCharacter() {
 
     }
 
@@ -43,7 +44,6 @@ public class TvCharacter {
     public void setName(String name) {
         this.name = name;
 
-
     }
 
     public String getDescription() {
@@ -54,7 +54,6 @@ public class TvCharacter {
         this.description = description;
     }
 
-
     public String getUniverse() {
         return universe;
     }
@@ -62,7 +61,6 @@ public class TvCharacter {
     public void setUniverse(String universe) {
         this.universe = universe;
     }
-
 
     public String getRole() {
         return role;
@@ -80,5 +78,12 @@ public class TvCharacter {
         this.species = species;
     }
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
 }
