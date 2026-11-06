@@ -15,72 +15,45 @@
         <p>Add a new character to the gallery!</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="details.html">Details</a>
-        <a href="about.html">About</a>
-        <a href="new-character-form.html">Add a Character</a>
-    </nav>
-
     <main>
 
         <section class="form-card">
 
             <h2>Character Information</h2>
+            <p id="formMessage"></p>
 
-            <form>
+            <form id="characterForm">
 
                 <label for="name">Character Name</label>
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter character name"
-                >
+                <input type="text" id="name" name="name" placeholder="Enter character name" required>
 
 
                 <label for="universe">Universe</label>
 
-                <input
-                    type="text"
-                    id="universe"
-                    name="universe"
-                    placeholder="Enter universe"
-                >
+                <input type="text" id="universe" name="universe" placeholder="Enter universe" required>
 
 
                 <label for="role">Role</label>
 
-                <input
-                    type="text"
-                    id="role"
-                    name="role"
-                    placeholder="Enter character role"
-                >
+                <input type="text" id="role" name="role" placeholder="Enter character role" required>
+
+                <label for="species">Species</label>
+                <input type="text" id="species" name="species" placeholder="Enter character species" required>
 
 
                 <label for="image">Image URL</label>
 
-                <input
-                    type="url"
-                    id="image"
-                    name="image"
-                    placeholder="Enter image URL"
-                >
+                <input type="text" id="image" name="image" placeholder="/images/character.gif" required>
 
 
                 <label for="description">Short Description</label>
 
-                <textarea
-                    id="description"
-                    name="description"
-                    rows="5"
-                    placeholder="Enter a short character description"
-                ></textarea>
+                <textarea id="description" name="description" rows="5" placeholder="Enter a short character description"
+                    required></textarea>
 
 
-                <button type="submit">Add Character</button>
+                <button type="submit" id="submitButton">Add Character</button>
 
             </form>
 
@@ -91,7 +64,8 @@
     <footer>
         <p>My Character Gallery &copy; 2026</p>
     </footer>
-<script src="/js/nav.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+    <script type="module" src="/js/form.js"></script>
 </body>
 
 </html>
