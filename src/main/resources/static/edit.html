@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Edit Character</title>
+</head>
+<body>
+
+    <header>
+        <h1>Edit Character</h1>
+        <p>Update your favorite character!</p>
+    </header>
+
+    <main>
+        <section class="form-card">
+            <h2>Character Information</h2>
+
+            <p id="formMessage" role="status">
+                Loading character...
+            </p>
+
+            <form id="editForm" hidden>
+
+                <label for="name">Character Name</label>
+                <input type="text" id="name" required>
+
+                <label for="universe">Universe</label>
+                <input type="text" id="universe" required>
+
+                <label for="role">Role</label>
+                <input type="text" id="role" required>
+
+                <label for="species">Species</label>
+                <input type="text" id="species" required>
+
+                <label for="image">Image URL</label>
+                <input type="text" id="image" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" rows="5" required></textarea>
+
+                <button type="submit" id="saveButton">
+                    Save Changes
+                </button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>My Character Gallery &copy; 2026</p>
+    </footer>
+
+    <script src="/js/nav.js" defer></script>
+    <script type="module" src="/js/edit.js"></script>
+
+</body>
+</html>
