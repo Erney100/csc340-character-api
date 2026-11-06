@@ -65,6 +65,7 @@ public class CharacterController {
                     existingCharacter.setUniverse(updatedCharacter.getUniverse());
                     existingCharacter.setRole(updatedCharacter.getRole());
                     existingCharacter.setSpecies(updatedCharacter.getSpecies());
+                    existingCharacter.setImageUrl(updatedCharacter.getImageUrl());
 
                     TvCharacter savedCharacter = characterService.saveCharacter(existingCharacter);
 
