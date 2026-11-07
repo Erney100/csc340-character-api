@@ -48,10 +48,12 @@
                 </p>
 
                 <p>
-                    This is a static website created using HTML and CSS.
-                    The search bar and character form are included as
-                    part of the design, but they do not currently save
-                    or search for information.
+                    This website is now a dynamic character gallery.
+                    Users can search for characters by name and universe,
+                    view character details, and add, edit, or delete
+                    characters. All character information is stored
+                    in a database instead of being hardcoded into
+                    the website.
                 </p>
 
                 <h3>My Design Choices</h3>
@@ -63,6 +65,54 @@
                     <li>Easy-to-read text</li>
                     <li>Cute and playful appearance</li>
                 </ul>
+
+                <h3>How This Website Works</h3>
+
+                <p>
+                    The frontend of this website was built using
+                    HTML, CSS, and Vanilla JavaScript. HTML creates
+                    the structure of each page, CSS controls the
+                    design and appearance, and JavaScript makes
+                    the website interactive.
+                </p>
+
+                <p>
+                    The backend was developed using Java and Spring Boot.
+                    It provides a REST API that handles requests to
+                    retrieve, create, update, and delete characters.
+                    Character information is stored in a Neon
+                    PostgreSQL database.
+                </p>
+
+                <h3>Frontend and Backend Connection</h3>
+
+                <p>
+                    The frontend communicates with the backend using
+                    JavaScript's Fetch API. When a user opens the
+                    gallery, JavaScript sends a GET request to the
+                    Spring Boot API to retrieve character information
+                    from the database.
+                </p>
+
+                <p>
+                    When a user adds a character, the website sends
+                    a POST request. Editing a character sends a PUT
+                    request, and deleting a character sends a DELETE
+                    request. The backend processes these requests
+                    and updates the database.
+                </p>
+
+                <h3>Application Architecture</h3>
+
+                <p>
+                    The application uses a layered architecture.
+                    The frontend handles the user interface, while
+                    the Spring Boot backend contains controller,
+                    service, and repository layers. The controller
+                    receives API requests, the service handles
+                    application logic, and the repository communicates
+                    with the Neon PostgreSQL database.
+                </p>
 
             </div>
 
